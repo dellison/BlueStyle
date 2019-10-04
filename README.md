@@ -333,10 +333,13 @@ end
 
 When calling a function always separate your keyword arguments from your positional arguments with a semicolon.
 This avoids mistakes in ambiguous cases (such as splatting a `Dict`).
+The `;` can be omitted only if there are no positional arguments and not splatting.
 
 ```julia
 # Yes:
 xy = foo(x; y=3)
+ab = foo(a=1, b=2)
+
 # No:
 xy = foo(x, y=3)
 ```
