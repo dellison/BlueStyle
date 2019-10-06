@@ -339,7 +339,7 @@ This avoids mistakes in ambiguous cases (such as splatting a `Dict`).
 xy = foo(x; y=3)
 ab = foo(; a=1, b=2)
 
-# Ok
+# Ok:
 ab = foo(a=1, b=2)
 
 # No:
